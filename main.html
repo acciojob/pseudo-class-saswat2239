@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Pseudo-Elements Example</title>
-<link rel="stylesheet" href="styles.css">
+<title>Pseudo-Elements Inline Example</title>
+<style>
+#container {
+  margin: 20px;
+}
+#container::before {
+  content: "Before Element";
+  color: #f00;
+  font-size: 20px;
+}
+#container::after {
+  content: "After Element";
+  color: #f00;
+  font-size: 20px;
+}
+</style>
 </head>
 <body>
 <div id="container">This is the main container content.</div>
